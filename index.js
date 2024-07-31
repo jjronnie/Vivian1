@@ -3,14 +3,14 @@ var tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname){
     for(tablink of tablinks){
-        tablink.classlist.remove("active-link")
+        tablink.classlist.remove("active-link");
     }
 
     for(tabcontent of tabcontents){
-        tabcontent.classlist.remove("active-tab")
+        tabcontent.classlist.remove("active-tab");
     }
-    eventSource.currentTarget.classlist.add("active-links")
-    document.getElementById(tabname).classList.add("active-tab")
+    eventSource.currentTarget.classlist.add("active-links");
+    document.getElementById(tabname).classList.add("active-tab");
 }
 
 
